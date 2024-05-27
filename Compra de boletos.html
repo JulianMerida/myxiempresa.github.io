@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Boletos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .ticket-info {
+            margin-bottom: 20px;
+        }
+        .ticket-info span {
+            font-weight: bold;
+        }
+        .total {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Compra de Boletos</h1>
+        <div class="ticket-info">
+            <p><span>Evento:</span> <?php echo $evento; ?></p>
+            <p><span>Fecha:</span> <?php echo $fecha; ?></p>
+            <p><span>Cantidad de Boletos:</span> <?php echo $cantidad_boletos; ?></p>
+            <p><span>Precio Unitario:</span> $<?php echo $precio_unitario; ?></p>
+        </div>
+        <div class="total">
+            Total: $<?php echo $total; ?>
+        </div>
+        <!-- Aquí podrías agregar un formulario para ingresar la información de pago y completar la compra -->
+    </div>
+</body>
+</html>
